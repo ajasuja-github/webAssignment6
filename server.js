@@ -127,7 +127,7 @@ app.post("/login", (req, res) => {
     .checkUser(req.body)
     .then((user) => {
       req.session.user = {
-        userName: user.username,
+        userName: user.userName,
         email: user.email,
         loginHistory: user.loginHistory,
       };
